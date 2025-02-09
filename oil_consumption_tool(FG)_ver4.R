@@ -35,28 +35,28 @@ dsx_12 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Plann
 ######################################################### Other List ######################################################
 
 # BoM RM to sku 
-rm_to_sku <- read_excel("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/RM/Weekly Report run/2025/01.14.2025/Raw Material Inventory Health (IQR) NEW TEMPLATE - 01.14.2025.xlsx", 
+rm_to_sku <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/File Repository/IQR Automation/RM/Weekly Run Files/2025/02.04.2025/Raw Material Inventory Health (IQR) NEW TEMPLATE - 02.04.2025.xlsx", 
                         sheet = "RM to SKU")
 
 # BoM Report 
-bom <- read_excel("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/IQR Automation/RM/Weekly Report run/2025/01.14.2025/Raw Material Inventory Health (IQR) NEW TEMPLATE - 01.14.2025.xlsx", 
+bom <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/File Repository/IQR Automation/RM/Weekly Run Files/2025/02.04.2025/Raw Material Inventory Health (IQR) NEW TEMPLATE - 02.04.2025.xlsx", 
                   sheet = "BoM")
 
 # Bulk Oil List ----
 # https://edgeanalytics.venturafoods.com/MicroStrategyLibrary/app/DF007F1C11E9B3099BB30080EF7513D2/A00AF850E84EC6F52CFD9DABD1742F03/K53--K46
-bulk_oil_list <- read_excel("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Oil Consumption/12 month rolling report/2025.01 Lag4/Bulk Oil Table.xlsx")
+bulk_oil_list <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.02 Lag4/Bulk Oil Table.xlsx")
 
 ## sku_actual (Make sure in the MSTR if months info input correct) 
 # https://edgeanalytics.venturafoods.com/MicroStrategyLibrary/app/DF007F1C11E9B3099BB30080EF7513D2/7D421DDA4D4411DA73B4469771826BD9/W62--K46
-sku_actual <- read_excel("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Oil Consumption/12 month rolling report/2025.01 Lag4/shipped.xlsx")
+sku_actual <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.02 Lag4/shipped.xlsx")
 
 # Input sales orders (Make sure in the MSTR if months info input correct) 
 # https://edgeanalytics.venturafoods.com/MicroStrategyLibrary/app/DF007F1C11E9B3099BB30080EF7513D2/7D421DDA4D4411DA73B4469771826BD9/W62--K46
-sales_orders <- read_excel("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Oil Consumption/12 month rolling report/2025.01 Lag4/ordered.xlsx")
+sales_orders <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.02 Lag4/ordered.xlsx")
 
 
 # Completed SKU List 
-completed_sku_list <- read_excel("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Safety Stock Compliance/Weekly Run Files/2025/01.14.2025/Complete SKU list - Linda.xlsx")
+completed_sku_list <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/File Repository/Lookup Datasets/Weekly Dataset/02.04.2025/Complete SKU list - Linda.xlsx")
 
 ###########################################################################################################################
 
@@ -604,7 +604,7 @@ forecast %>%
 
 
 # Oil List ----
-oil_list <- read_excel("C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Oil Consumption/Oil types AS400 JDE.xlsx")
+oil_list <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/File Repository/Lookup Datasets/Static_MonthlyLookup Dataset/Oil types AS400 JDE.xlsx")
 
 oil_list %>% 
   janitor::clean_names() %>% 
@@ -3248,7 +3248,7 @@ s_1 %>%
 
 
 # Export to Excel File ----
-writexl::write_xlsx(identitied_skus_not_existing, "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Oil Consumption/12 month rolling report/2025.01 Lag4/Identitied skus not existing.xlsx")
+writexl::write_xlsx(identitied_skus_not_existing, "C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.02 Lag4/Identitied skus not existing.xlsx")
 
 
 
@@ -3439,5 +3439,5 @@ colnames(final_paper)[51]	<-	"DSX"
 
 
 # Export to Excel File ----
-writexl::write_xlsx(final_paper, "C:/Users/slee/OneDrive - Ventura Foods/Ventura Work/SCE/Project/FY 23/Oil Consumption/12 month rolling report/2025.01 Lag4/oil_consumption_comparison.xlsx")
+writexl::write_xlsx(final_paper, "C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.02 Lag4/oil_consumption_comparison.xlsx")
 
