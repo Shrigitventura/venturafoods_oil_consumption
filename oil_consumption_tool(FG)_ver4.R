@@ -17,22 +17,23 @@ library(lubridate)
 
 
 dsx_lag4 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2023/DSX Forecast Backup - 2023.12.04.xlsx")
-dsx_lag3 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.01.02.xlsx")
-dsx_lag2 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.02.01.xlsx")
-dsx_lag1 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.03.01.xlsx")
+dsx_lag4 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.01.02.xlsx")
+dsx_lag3 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.02.01.xlsx")
+dsx_lag2 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.03.01.xlsx")
 
-dsx_1 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.04.01.xlsx")
-dsx_2 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.05.01.xlsx")
-dsx_3 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.06.03.xlsx")
-dsx_4 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.07.01.xlsx")
-dsx_5 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.08.02.xlsx")
-dsx_6 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.09.03.xlsx")
-dsx_7 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.10.01.xlsx")
-dsx_8 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.11.01.xlsx")
-dsx_9 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.12.02.xlsx")
-dsx_10 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2025/DSX Forecast Backup - 2025.01.02.xlsx")
-dsx_11 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2025/DSX Forecast Backup - 2025.03.03.xlsx")
-dsx_12 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2025/DSX Forecast Backup - 2025.04.01.xlsx")
+dsx_lag1 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.04.01.xlsx")
+dsx_1 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.05.01.xlsx")
+dsx_2 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.06.03.xlsx")
+dsx_3 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.07.01.xlsx")
+dsx_4 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.08.02.xlsx")
+dsx_5 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.09.03.xlsx")
+dsx_6 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.10.01.xlsx")
+dsx_7 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.11.01.xlsx")
+dsx_8 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2024/DSX Forecast Backup - 2024.12.02.xlsx")
+dsx_9 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2025/DSX Forecast Backup - 2025.01.02.xlsx")
+dsx_10 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2025/DSX Forecast Backup - 2025.03.03.xlsx")
+dsx_11 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2025/DSX Forecast Backup - 2025.04.01.xlsx")
+dsx_12 <- read_excel("S:/Global Shared Folders/Large Documents/S&OP/Demand Planning/BI Forecast Backup/2025/DSX Forecast Backup - 2025.05.01.xlsx")
 
 ######################################################### Other List ######################################################
 
@@ -46,15 +47,15 @@ bom <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/St
 
 # Bulk Oil List ----
 # https://edgeanalytics.venturafoods.com/MicroStrategyLibrary/app/DF007F1C11E9B3099BB30080EF7513D2/A00AF850E84EC6F52CFD9DABD1742F03/K53--K46
-bulk_oil_list <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.04 Lag4/Bulk Oil Table.xlsx")
+bulk_oil_list <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.05 Lag4/Bulk Oil Table.xlsx")
 
 ## sku_actual (Make sure in the MSTR if months info input correct) 
 # https://edgeanalytics.venturafoods.com/MicroStrategyLibrary/app/DF007F1C11E9B3099BB30080EF7513D2/7D421DDA4D4411DA73B4469771826BD9/W62--K46
-sku_actual <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.04 Lag4/shipped.xlsx")
+sku_actual <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.05 Lag4/shipped.xlsx")
 
 # Input sales orders (Make sure in the MSTR if months info input correct) 
 # https://edgeanalytics.venturafoods.com/MicroStrategyLibrary/app/DF007F1C11E9B3099BB30080EF7513D2/7D421DDA4D4411DA73B4469771826BD9/W62--K46
-sales_orders <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.04 Lag4/ordered.xlsx")
+sales_orders <- read_excel("C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.05 Lag4/ordered.xlsx")
 
 
 # Completed SKU List 
@@ -3250,7 +3251,7 @@ s_1 %>%
 
 
 # Export to Excel File ----
-writexl::write_xlsx(identitied_skus_not_existing, "C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.04 Lag4/Identitied skus not existing.xlsx")
+writexl::write_xlsx(identitied_skus_not_existing, "C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.05 Lag4/Identitied skus not existing.xlsx")
 
 
 
@@ -3441,5 +3442,5 @@ colnames(final_paper)[51]	<-	"DSX"
 
 
 # Export to Excel File ----
-writexl::write_xlsx(final_paper, "C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.04 Lag4/oil_consumption_comparison.xlsx")
+writexl::write_xlsx(final_paper, "C:/Users/SPoudel/Ventura Foods/SC Analytics Team - General/Stan Report Files/Oil Consumption/2025.05 Lag4/oil_consumption_comparison.xlsx")
 
